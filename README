@@ -1,0 +1,9 @@
+BuildCrossPlatform
+===================
+Utility that does cross platform build of a local project
+in go.
+
+I used this lib to generate the builds present in this
+repository in the ./build folder. You can run one of
+these or run 'go build'. At the moment there is no ios and
+android because I don't have GCC in my environment.

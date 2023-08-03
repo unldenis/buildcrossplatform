@@ -25,9 +25,9 @@ func main() {
 	var version string
 	getInput(&version, "build project version")
 
-	for _, h := range records {
-		osVal := h[0]
-		archVal := h[1]
+	for i := 1; i < len(records); i++ {
+		osVal := records[i][0]
+		archVal := records[i][1]
 
 		build(&dir, &nameFile, &version, &osVal, &archVal)
 	}
